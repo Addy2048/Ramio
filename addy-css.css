@@ -1,0 +1,211 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+body {
+    /* background-color: lightgray; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+}
+.full-height {
+    height: 100%;
+}
+.full-width {
+    width: 100%;
+}
+.width-half {
+    width: 50%;
+}
+.full-hw {
+    height: 100%;
+    width: 100%;
+}
+.height-half {
+    height: 50%;
+}
+.width-qt {
+    width: 25%;
+}
+.half-hw {
+    height: 50%;
+    width: 50%;
+}
+.flex-container-s {
+    display: flex;
+}
+.flex-container-x {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+}
+.flex-jcs {
+    justify-content: flex-start;
+}
+.flex-jce {
+    justify-content: flex-end;
+}
+.flex-jcc {
+    justify-content: center;
+}
+.flex-fc {
+    justify-content: center;
+    align-items: center;
+}
+.flex-gapx {
+    gap: 4%;
+}
+.flex-container-y {
+    display: flex;
+    flex-flow: column wrap;
+}
+.flex-content-half {
+    flex-basis: 50%;
+}
+.flex-content-halfx {
+    flex-basis: 48%;
+}
+.flex-content-qt {
+    flex-basis: 25%;
+}
+.make-block {
+    display: block;
+}
+.make-inline {
+    display: inline-block;
+}
+.make-inlineblock {
+    display: inline-block;
+}
+.gray-bg {
+    background-color: lightgray;
+    color: white;
+}
+.darkgray-bg {
+    background-color: #2f2f1e;
+    color: white;
+}
+.white-bg {
+    background-color: white;
+    color: black;
+}
+.pos-rel {
+    position: relative;
+}
+.pos-abs {
+    position: absolute;
+}
+.pos-fix {
+    position: fixed;
+}
+.pos-stk {
+    position: sticky;
+}
+.overflow-hide {
+    overflow: hidden;
+}
+.overflow-scroll-x {
+    overflow: scroll;
+}
+.overflow-scroll-y {
+    overflow-y: scroll;
+}
+.marginx {
+    margin: 4rem;
+}
+.margins {
+    margin: 1rem;
+}
+.marginxb {
+    margin-bottom: 4rem;
+}
+.marginxbs {
+    margin-bottom: 2rem;
+}
+.marginxbp {
+    margin-bottom: 5rem;
+}
+.marginsb {
+    margin-bottom: 1rem;
+}
+.marginz {
+    margin: 0px;
+}
+.marginzt{
+    margin-top: 0px;
+}
+.marginxxy {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+.marginsxy {
+    margin-right: 1rem;
+}
+.marginxx {
+    margin-left: 4px;
+}
+.paddingx {
+    padding: 4rem;
+}
+.pointer {
+    cursor: pointer;
+}
+.weightx {
+    font-weight: bold;
+}
+.font-xl {
+    font-size: 4rem;
+}
+.font-x {
+    font-size: 2rem;
+}
+.font-xs {
+    font-size: 1.5rem;
+}
+.font-min {
+    font-size: 0.75rem;
+}
+.font-minx {
+    font-size: 0.85rem;
+}
+.font-dark-gray {
+    color: #2f2f1e;
+}
+.font-gray {
+    color: gray;
+}
+.hover-bottom:hover {
+    border-bottom: 2px solid black;
+    padding-bottom: 1rem;
+}
+.solid-border {
+    border: 2px solid black;
+    padding: 0.5rem 1rem 0.5rem 1rem;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+.center-text {
+    text-align: center;
+}
+.mid-op {
+    opacity: 0.5;
+}
+
+/* special style for hover */
+.div-sp:hover {
+    display: block;
+}
+
+/* media queries */
+/* small screen */
+@media (max-width: 600px) {.hide-small { display: none;}.full-width-s{ width: 100%;}.full-height-s{height: 80%;}.full-hw-smq {height: 100%;width: 100%;}.full-width-smq{width: 100%;}.flex-container-y-smq{display: flex;flex-flow: column wrap;}.flex-cr-smq{display: flex; flex-direction: column-reverse;}.flex-rr-smq{display:flex; flex-direction: row-reverse;}.full-weh-smq{width: 100%; height: 75%;}}
+/* medium screen */
+@media (min-width:601px) and (max-width:992) {.full-height-mmq{height: 50%;}}
+/* large screen */
+@media (min-width: 993px) {.flex-content-half-mq {flex-basis: 50%;}.overflow-hide-mq {overflow: hidden;}.flex-content-halfx {flex-basis: 48%;}.special {display: none;}.half-hw-mq {height: 50%;width: 50%;}.overflow-scroll-y-mq {overflow-y: scroll;}.full-height-ms{height: 100%;}}
