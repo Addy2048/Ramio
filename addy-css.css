@@ -184,7 +184,7 @@ body {
     color: gray;
 }
 .font-bilbo {
-    font-family: 'Bilbo Swash Caps', cursive;
+    font-family: 'Bilbo', cursive;
 }
 .hover-bottom:hover {
     border-bottom: 2px solid black;
