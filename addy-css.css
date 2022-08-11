@@ -1,16 +1,17 @@
-html {
+html
+ {
     box-sizing: border-box;
-    height: 100%;
 }
 *, *::before, *::after {
     box-sizing: inherit;
 }
+html, body {
+    height: 100%;
+}
 body {
-    /* background-color: lightgray; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0px;
     padding: 0px;
-    height: 100%;
 }
 .full-height {
     height: 100%;
@@ -43,6 +44,7 @@ body {
     flex-flow: row wrap;
     justify-content: flex-start;
 }
+.flex-jcs{ justify-content: space-around;}
 .flex-jcs {
     justify-content: flex-start;
 }
@@ -59,6 +61,9 @@ body {
 .flex-gapx {
     gap: 4%;
 }
+.flex-gapxx {
+    gap: 8%;
+}
 .flex-container-y {
     display: flex;
     flex-flow: column wrap;
@@ -68,6 +73,9 @@ body {
 }
 .flex-content-halfx {
     flex-basis: 48%;
+}
+.flex-content-halfx-mini {
+    flex-basis: 46%;
 }
 .flex-content-qt {
     flex-basis: 25%;
@@ -92,6 +100,9 @@ body {
 .white-bg {
     background-color: white;
     color: black;
+}
+.text-gray {
+    color: gray;
 }
 .pos-rel {
     position: relative;
@@ -148,17 +159,11 @@ body {
 .marginxx {
     margin-left: 4px;
 }
-.paddingx {
-    padding: 4rem;
-}
 .pointer {
     cursor: pointer;
 }
 .weightx {
     font-weight: bold;
-}
-.font-xl {
-    font-size: 4rem;
 }
 .font-x {
     font-size: 2rem;
@@ -178,6 +183,9 @@ body {
 .font-gray {
     color: gray;
 }
+.font-bilbo {
+    font-family: 'Bilbo Swash Caps', cursive;
+}
 .hover-bottom:hover {
     border-bottom: 2px solid black;
     padding-bottom: 1rem;
@@ -196,6 +204,15 @@ a {
 .mid-op {
     opacity: 0.5;
 }
+/* .drop-content {
+    display: ;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 0;
+  } */
+  
 
 /* special style for hover */
 .div-sp:hover {
@@ -204,8 +221,58 @@ a {
 
 /* media queries */
 /* small screen */
-@media (max-width: 600px) {.hide-small { display: none;}.full-width-s{ width: 100%;}.full-height-s{height: 80%;}.full-hw-smq {height: 100%;width: 100%;}.full-width-smq{width: 100%;}.flex-container-y-smq{display: flex;flex-flow: column wrap;}.flex-cr-smq{display: flex; flex-direction: column-reverse;}.flex-rr-smq{display:flex; flex-direction: row-reverse;}.full-weh-smq{width: 100%; height: 75%;}}
+@media (max-width: 600px) {
+    .hide-small { display: none;}
+    .full-width-s{ width: 100%;}
+    .full-height-s{height: 80%;}
+    .full-hw-smq {height: 100%;width: 100%;}
+    .full-width-smq{width: 100%;}
+    .flex-container-y-smq{display: flex;flex-flow: column wrap;}
+    .flex-cr-smq{display: flex; flex-direction: column-reverse;}
+    .flex-rr-smq{display:flex; flex-direction: row-reverse;}
+    .full-weh-smq{width: 100%; height: 30%;}
+    .font-xl {font-size: 2.5rem;}
+    .height-three-qt {height: 75%;}
+    .paddingx {padding: 1rem;}
+    .marginx-mq {margin: 2rem;}
+    .o0{ order: 0;}
+    .o1{ order: 1;}
+    .o2{ order: 2;}
+    .o3{ order: 3;}
+    .o4{ order: 4;}
+    .o5{ order: 5;}
+    .o6{ order: 6;}
+    .o7{ order: 7;}
+    .o8{ order: 8;}
+    .o9{ order: 9;}
+    .auto-height{height: auto;}
+}
+
 /* medium screen */
-@media (min-width:601px) and (max-width:992) {.full-height-mmq{height: 50%;}}
+@media (max-width:992px) and (min-width:601px) {
+    .height-mmq{height: 60%;}
+    .width-mmq{width: 100%;}
+    .hide-medium{display: none;}
+    .flex-content-half-mmq {flex-basis: 50%;}
+    .half-hw-mq {height: 50%;width: 50%;}
+    .font-xl {font-size: 4rem;}
+    .paddingx {padding: 4rem;}
+    .marginx-mq {margin: 4rem;}
+    .flex-content-halfx-mini-mq {flex-basis: 46%;}
+}
+
 /* large screen */
-@media (min-width: 993px) {.flex-content-half-mq {flex-basis: 50%;}.overflow-hide-mq {overflow: hidden;}.flex-content-halfx {flex-basis: 48%;}.special {display: none;}.half-hw-mq {height: 50%;width: 50%;}.overflow-scroll-y-mq {overflow-y: scroll;}.full-height-ms{height: 100%;}}
+@media (min-width: 993px) {
+    .font-xl {font-size: 4rem;}
+    .flex-content-half-mq {flex-basis: 50%;}
+    .overflow-hide-mq {overflow: hidden;}
+    .flex-content-halfx-mq {flex-basis: 48%;}
+    .flex-content-halfx-mini-mq {flex-basis: 46%;}
+    .special {display: none;}
+    .half-hw-mq {height: 50%;width: 50%;}
+    .overflow-scroll-y-mq {overflow-y: scroll;}
+    .full-height-mq{height: 100%;}
+    .hide-large{display: none;}
+    .paddingx {padding: 4rem;}
+    .marginx-mq {margin: 4rem;}
+}
