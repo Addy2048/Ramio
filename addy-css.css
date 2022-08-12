@@ -131,14 +131,8 @@ body {
 .margins {
     margin: 1rem;
 }
-.marginxb {
-    margin-bottom: 4rem;
-}
 .marginxbs {
     margin-bottom: 2rem;
-}
-.marginxbp {
-    margin-bottom: 5rem;
 }
 .marginsb {
     margin-bottom: 1rem;
@@ -246,6 +240,8 @@ a {
     .o8{ order: 8;}
     .o9{ order: 9;}
     .auto-height{height: auto;}
+    .marginxbp {margin-bottom: 5rem;}
+    .marginxb {margin-bottom: 4rem;}
 }
 
 /* medium screen */
@@ -259,6 +255,8 @@ a {
     .paddingx {padding: 4rem;}
     .marginx-mq {margin: 4rem;}
     .flex-content-halfx-mini-mq {flex-basis: 46%;}
+    .marginxbp {margin-bottom: 2rem;}
+    .marginxb {margin-bottom: 1.5rem;}
 }
 
 /* large screen */
@@ -275,4 +273,6 @@ a {
     .hide-large{display: none;}
     .paddingx {padding: 4rem;}
     .marginx-mq {margin: 4rem;}
+    .marginxbp {margin-bottom: 5rem;}
+    .marginxb {margin-bottom: 4rem;}
 }
