@@ -206,12 +206,6 @@ a {
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 0;
   } */
-  
-
-/* special style for hover */
-.div-sp:hover {
-    display: block;
-}
 
 /* media queries */
 /* small screen */
@@ -258,6 +252,8 @@ a {
     .flex-content-halfx-mini-mq {flex-basis: 46%;}
     .marginxbp {margin-bottom: 2rem;}
     .marginxb {margin-bottom: 1.5rem;}
+    .gal:hover .gallery {display: none;}
+    .gal:hover .caption{display: block;}
 }
 
 /* large screen */
@@ -276,4 +272,6 @@ a {
     .marginx-mq {margin: 4rem;}
     .marginxbp {margin-bottom: 5rem;}
     .marginxb {margin-bottom: 4rem;}
+    .gal:hover .gallery {display: none;}
+    .gal:hover .caption{display: block;}
 }
